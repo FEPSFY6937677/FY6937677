@@ -101,7 +101,14 @@
   
 
   <h2 id="Analysis and Discussion">Analysis and Discussion</h2>
+<p>
+  The Knapsack problem is applied in finance for tasks like portfolio optimisation, where assets are selected to maximise returns. Each item is given a certain weight and value, and either included or excluded, no item is partially included or split and the capacity of the knapsack is fixed. For each item you use a variable, either 1 if it is picked, or 0 if it is not. The sum of the weights must not go over the maximum capacity of the knapsack and the sum of the values of the selected items is what you want to maximise. 
+Because the problem is combinatorial, exact solutions become harder the more items you are attempting to manage. For larger sets of items you use methods like dynamic programming to break the big problem down into smaller steps, filling out a table to show the best possible value for every smaller set of items and every possible weight limit until you reach the solution for the total problem.
+Daniel E. O’Leary’s work on financial planning applied the 0/1 knapsack to choose projects or investments with maximum return under budget limits . He formulates it as maximising returns subject to a budget constraint with variables restricted to 0 or 1, reflecting inclusion or exclusion of projects (O’Leary, 1995).
+Recent studies further expand this approach. One study combined the 0/1 knapsack model with mean-variance optimisation to find optimal asset mixes, achieving returns which exceeded benchmarks with controlled risk (Iheonu & Ebirilem, 2023). Another recent approach reformulated portfolio optimisation as a knapsack problem and used quantum computing techniques to handle its computational complexity, showing promising approximate solutions (Huot et al, 2017). These more recent studies compared to O’Learys older work, show that the knapsack model still holds its relevance today, especially with newer computational methods that allow us to tackle larger data sets much faster, aiding in the application of the model through dynamic computation.
+The 0/1 knapsack model in portfolio management helps investors make clear, binary decisions on asset inclusion. It respects strict constraints such as budget or risk limits. Unlike continuous methods which allow fractional investment, this approach ensures chosen assets are fully included or excluded, matching real world investment choices where partial holdings may be infeasible. It provides a valuable framework for portfolio optimization. This approach aligns itself well with practical budgeting and also lends itself to advanced solution methods from operations research and emerging quantum computing for more efficient portfolio selection.
 
+</p>
 <h2 id="References">References</h2>
 
   <p>
