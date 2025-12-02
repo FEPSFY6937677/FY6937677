@@ -10,7 +10,6 @@
     <h2 style="font-family:calibri;"><b>Conference Paper: Knapsack 0/1 Problem</b><h/2>
     <hr>
 
-      <p style="font-size: 8px;">
 
       
       
@@ -85,13 +84,13 @@
 
 
 <h2 id="Abstract">Abstract</h2>
-  <p>
+  <p style="font-size: 10px;">
     This page explores how the 0/1 Knapsack problem supports financial decision making in portfolio optimisation and project selection. By modelling assets or projects as indivisible choices with fixed costs and benefits, the knapsack framework helps maximise returns under strict budget constraints. It’s applications range from traditional financial planning and discrete portfolio construction, to stochastic project evaluation and use across different sectors. The discussion highlights both classical solutions and emerging computational approaches that address large scale combinatorial complexity. 
   </p>
 
   
   <h2 id="Introduction">Introduction</h2>
-<p>
+<p style="font-size: 10px;">
    
      The Knapsack 0/1 Problem is a classic optimization problem where  you must select a subset of items, each with a specific weight and value, to place into a knapsack with a maximum weight capacity, with the goal of maximizing the total value of the selected items without exceeding the capacity. It presents the challenge of choosing the most profitable combination of goods that can fit. In this page I will be delving into some of the financial applications for this mathematical problem,  portfolio optimisation and project selection.
 </p>
@@ -101,23 +100,23 @@
 
   <h2 id="Analysis and Discussion">Analysis and Discussion</h2>
 <ex1>
-  <p>
+  <p style="font-size: 10px;">
    The Knapsack problem is applied in finance for tasks like portfolio optimisation, where assets are selected to maximise returns. Each item is given a certain weight and value, and either included or excluded, no item is partially included or split and the capacity of the knapsack is fixed. For each item you use a variable, either 1 if it is picked, or 0 if it is not. The sum of the weights must not go over the maximum capacity of the knapsack and the sum of the values of the selected items is what you want to maximise (Kellerer, Hans, 2004). 
 Because the problem is combinatorial, exact solutions become harder the more items you are attempting to manage. For larger sets of items you use methods like dynamic programming to break the big problem down into smaller steps, filling out a table to show the best possible value for every smaller set of items and every possible weight limit until you reach the solution for the total problem.
   </p>
 
   <h3>Portfolio Optimization</h3>
-  <p>
+    <p style="font-size: 10px;">
 The 0/1 knapsack model in portfolio management helps investors make clear, binary decisions on asset inclusion by assigning each asset a value and weight, which can represent capital requirement. It respects strict constraints such as budget or risk limits. Unlike continuous methods which allow fractional investment, this approach ensures chosen assets are fully included or excluded, matching real world investment choices where partial holdings may be infeasible. It provides a valuable framework for portfolio optimization. This approach aligns itself well with practical budgeting and also lends itself to advanced solution methods from operations research and emerging quantum computing for more efficient portfolio selections. Daniel E. O’Leary’s work on financial planning applied the 0/1 knapsack to choose projects or investments with maximum return under budget limits . He formulates it as maximising returns subject to a budget constraint with variables restricted to 0 or 1, reflecting inclusion or exclusion of projects (O’Leary, 1995). Academic texts emphasise the suitability of knapsack modelling in situations where fractional investment is impractical or unavailable. Researchers have continued to apply knapsack formulations to financial markets, and show that discrete portfolio selection can outperform continuous optimization in situations where there are indivisible assets or minimum lot constraints (Mansini; Ogryczak & Speranza, 2015). Recent work has integrated the classic 0/1 knapsack structure with mean-variance modelling and other modern techniques (Iheonu & Ebirilem, 2023) and quantum inspired approaches to computation which are capable of handling the exponential growth in combinations for larger scale application of the model (Patvardhan, C., Bansal, Sulabh, Srivastav, A.).
   </p>
 <h3>Project Selection</h3>
-  <p>
+    <p style="font-size: 10px;">
 The 0/1 Knapsack model can be used in project selection to aid in deciding which projects investors should and shouldn’t undertake by showing their expected return on investment given a fixed budget. Each project is represented by a binary decision variable, which represents whether the project should be invested in, with associated costs and expected benefits which forms the weight-value structure of the knapsack model. Certain texts describe how managers use the 0/1 knapsack model to find the optimal combination of mutually exclusive projects to maximise their total net gain without overspending and exceeding budgets (). More recent work integrates uncertainty into the process of selection by using stochastic knapsack formulations to evaluate the risk and viability of a project (Merzifonluoglu, Y. & Geunes, J., 2020) these studies show that the knapsack 0/1 model remains a useful and important framework to be used in project selection and evaluation that can support organisations in maximising their returns while not exceeding budgetary limits. Academic studies further extend these ideas, for example, Badri et al. (2012) show how the 0/1 knapsack model can be used to optimise R&D project portfolios by selecting certain high value research initiatives with regard to funding limits. The knapsack model has also been applied to the real estate market, through applying it to determine how best to maintain real estate property buildings when working with a constrained budget (Franck, T., Christophe, F., Amadou, N., 2017). This shows the knapsack models applications across different sectors.
   </p>
 </ex1>
 <h2 id="References">References</h2>
 
-  <p>
+    <p style="font-size: 10px;">
     Patvardhan, C. ; Bansal, Sulabh ; Srivastav, A. (2015) ‘Solving the 0-1 Quadratic Knapsack Problem with a competitive Quantum Inspired Evolutionary Algorithm’, Journal of computational and applied mathematics Vol(285) pp 86-99
 
     Iheonu, N.O. & Ebirilem, C.G. (2023) ‘Portfolio Optimization Using a 0/1 Knapsack Framework Combined with Mean-Variance Analysis’, Asian Journal of Probability and Statistics Vol(25(2)) pp 52-62
