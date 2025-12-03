@@ -129,7 +129,7 @@ Because the problem is combinatorial, exact solutions become harder the more ite
   </p>
 </div>
 
-      <!-- Google Charts -->
+
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
     google.charts.load('current', { 'packages': ['corechart'] });
@@ -137,6 +137,7 @@ Because the problem is combinatorial, exact solutions become harder the more ite
 
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
+        ['Sector', 'Percentage of Portfolio']
         ['Investment Banking and Brokerage Services', 1.2],
         ['Non-life Insurance', 0.8],
         ['Industrial Support Services', 0.8]
@@ -149,7 +150,7 @@ Because the problem is combinatorial, exact solutions become harder the more ite
         ['+ 9 others', 3.6]
       ]);
 
-      var options = { title: 'Options for Cockpit Safety' };
+      var options = { title: 'Example of Portfolio Sector Diversity' };
       var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
       chart.draw(data, options);
     }
