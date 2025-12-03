@@ -233,34 +233,31 @@ Because the problem is combinatorial, exact solutions become harder the more ite
  <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Word count function ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
-<!-- Placeholder for total word count -->
+    
 <p id="totalWordCount"></p>
 <hr>
-<script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_Count");
-    const AnalysisCount = displayWordCount("Analysis_Count");
-    // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-    </script>
+ <script>
+    function displayWordCount(sectionId) {
+      // Only count text inside paragraph elements
+      const paragraphs = document.querySelectorAll(`#${sectionId} p`);
+      let text = "";
+      paragraphs.forEach(p => {
+        text += " " + p.textContent;
+      });
+
+      const wordArray = text.trim().split(/\s+/).filter(word => word.length > 0);
+      return wordArray.length;
+    }
+
+    function displayTotalWordCount() {
+      const introCount = displayWordCount("Introduction_InText");
+      const analysisCount = displayWordCount("Analysis_InText");
+      const totalWordCount = introCount + analysisCount;
+      document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    }
+
+    window.onload = displayTotalWordCount;
+  </script>
 
 
   </body>
