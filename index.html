@@ -128,6 +128,36 @@ Because the problem is combinatorial, exact solutions become harder the more ite
       The 0/1 Knapsack model can be used in project selection to aid in deciding which projects investors should and shouldn’t undertake by showing their expected return on investment given a fixed budget. Each project is represented by a binary decision variable, which represents whether the project should be invested in, with associated costs and expected benefits which forms the weight-value structure of the knapsack model. Certain texts describe how managers use the 0/1 knapsack model to find the optimal combination of mutually exclusive projects to maximise their total net gain without overspending and exceeding budgets <a href="#References">(Jecmen, K., 2024)</a>. More recent work integrates uncertainty into the process of selection by using stochastic knapsack formulations to evaluate the risk and viability of a project <a href="#References">(Merzifonluoglu, Y. & Geunes, J., 2020)</a> these studies show that the knapsack 0/1 model remains a useful and important framework to be used in project selection and evaluation that can support organisations in maximising their returns while not exceeding budgetary limits. Academic studies further extend these ideas, for example, one paper explores how the 0/1 knapsack model can optimise project selection for the US Governmemnt by creating varying weights for each of the 84 given objectives <a href="#References">(Gabriel, S.A. ; Kumar, S. ; Ordonez, J. ; Nasserian, A., 2006)</a>. The results showed an improved efficiency in budgeting compared to the US Government's actual project selection, this is due to the models unique integration with multiobjective optimization, Monte Carlo simulation, and the Analytic Hierarchy Process. The knapsack model has also been applied to the real estate market, through applying it to determine how best to maintain real estate property buildings when working with a constrained budget <a href="#References">(Franck, T., Christophe, F., Amadou, N., 2017)</a>. This shows the knapsack models applications across different sectors.
   </p>
 </div>
+
+      <!-- Google Charts -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Investment Banking and Brokerage Services', 1.2],
+        ['Non-life Insurance', 0.8],
+        ['Industrial Support Services', 0.8]
+        ['Life Insurance', 0.8]
+        ['Tobacco', 0.8]
+        ['Media', 0.8]
+        ['Software and Computer Services', 0.4]
+        ['Household Goods and Home Construction', 0.4]
+        ['Retailers', 0.4]
+        ['+ 9 others', 3.6]
+      ]);
+
+      var options = { title: 'Options for Cockpit Safety' };
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+  </details>
+
+  <div id="chart_div" style="width: 500px; height: 300px;"></div>
+
 <h2 id="References"><b><ins>References</ins></b></h2>
 
    <p>
