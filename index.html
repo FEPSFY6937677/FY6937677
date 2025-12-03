@@ -97,13 +97,15 @@
    
      The Knapsack 0/1 Problem is a classic optimization problem where  you must select a subset of items, each with a specific weight and value, to place into a knapsack with a maximum weight capacity, with the goal of maximizing the total value of the selected items without exceeding the capacity. It presents the challenge of choosing the most profitable combination of goods that can fit. In this page I will be delving into some of the financial applications for this mathematical problem,  portfolio optimisation and project selection.
 </p>
+  </div>
 
   
 
   
 
   <h2 id="Analysis and Discussion">Analysis and Discussion</h2>
-<ex1>
+  <div id="Analysis_InText">
+
   <p>
    The Knapsack problem is applied in finance for tasks like portfolio optimisation, where assets are selected to maximise returns. Each item is given a certain weight and value, and either included or excluded, no item is partially included or split and the capacity of the knapsack is fixed. For each item you use a variable, either 1 if it is picked, or 0 if it is not. The sum of the weights must not go over the maximum capacity of the knapsack and the sum of the values of the selected items is what you want to maximise <a href="#References">(Kellerer, Hans, 2004)</a>. 
 Because the problem is combinatorial, exact solutions become harder the more items you are attempting to manage. For larger sets of items you use methods like dynamic programming to break the big problem down into smaller steps, filling out a table to show the best possible value for every smaller set of items and every possible weight limit until you reach the solution for the total problem.
@@ -122,7 +124,7 @@ Because the problem is combinatorial, exact solutions become harder the more ite
     <p>
       The 0/1 Knapsack model can be used in project selection to aid in deciding which projects investors should and shouldn’t undertake by showing their expected return on investment given a fixed budget. Each project is represented by a binary decision variable, which represents whether the project should be invested in, with associated costs and expected benefits which forms the weight-value structure of the knapsack model. Certain texts describe how managers use the 0/1 knapsack model to find the optimal combination of mutually exclusive projects to maximise their total net gain without overspending and exceeding budgets <a href="#References">(Jecmen, K., 2024)</a>. More recent work integrates uncertainty into the process of selection by using stochastic knapsack formulations to evaluate the risk and viability of a project <a href="#References">(Merzifonluoglu, Y. & Geunes, J., 2020)</a> these studies show that the knapsack 0/1 model remains a useful and important framework to be used in project selection and evaluation that can support organisations in maximising their returns while not exceeding budgetary limits. Academic studies further extend these ideas, for example, one paper explores how the 0/1 knapsack model can optimise project selection for the US Governmemnt by creating varying weights for each of the 84 given objectives <a href="#References">(Gabriel, S.A. ; Kumar, S. ; Ordonez, J. ; Nasserian, A., 2006)</a>. The results showed an improved efficiency in budgeting compared to the US Government's actual project selection, this is due to the models unique integration with multiobjective optimization, Monte Carlo simulation, and the Analytic Hierarchy Process. The knapsack model has also been applied to the real estate market, through applying it to determine how best to maintain real estate property buildings when working with a constrained budget <a href="#References">(Franck, T., Christophe, F., Amadou, N., 2017)</a>. This shows the knapsack models applications across different sectors.
   </p>
-</ex1>
+</div>
 <h2 id="References">References</h2>
 
 
